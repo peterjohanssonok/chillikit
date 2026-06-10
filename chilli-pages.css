@@ -1,0 +1,144 @@
+
+/* Part of the Chilli kit — https://chillikit.com | Free to use, modify, and share. Please keep this note. */
+
+@charset "UTF-8";
+
+body{
+    background-color: #c0c0c0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 1rem;
+}
+#page-container{
+    width: 96%;
+    height: auto;
+    min-height: 70vh;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+/* min-width when screen is larger than 1000 px*/
+@media screen and (min-width:1000px){
+    #page-container{
+        padding: 1rem 3rem;
+    }
+}
+
+#gotopbutton{
+    display: none;
+    position: fixed;
+    left: 50%;
+    padding: 1rem;
+    background-color: #ffe0d0;
+    color:#000000;
+    border-radius: 6px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+/*----------------------------------------
+    Header
+----------------------------------------*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 3px solid #ff4d4c;
+    overflow: hidden;
+    height: auto;
+}
+#logo{
+    width: 50px;
+}
+#title{
+    display: block;
+    font-family: Arial;
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.hamburger{
+    display: inline-block;
+    font-size: 30px;
+    width: 50px;
+}
+.hamburger:before{
+    content: "\2630";
+    float: right;
+}
+.hamburger-open:before{
+    content: "X";
+    float: right;
+}
+/*----------------------------------------
+    /Header
+----------------------------------------*/
+/*----------------------------------------
+    Dropdown
+----------------------------------------*/
+.dropdown{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+}
+.mainmenu{
+    padding: 2rem;
+}
+.dropdown-open{
+    height: auto;
+    max-height: 700px;
+}
+.dropdown li a{
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #000000;
+}
+.dropdown li a:hover{
+    background-color: #d0d0d0;
+}
+/*----------------------------------------
+    /Dropdown
+----------------------------------------*/
+article a{
+    color: #000000;
+    text-decoration: underline solid #ff4d4c 2px;
+}
+.latest-item, .archive-item{
+    display: block;
+    overflow: hidden;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1.3rem;
+    border-top: 1px solid #d0d0d0;
+}
+.previouspage, .nextpage{
+    display: block;
+    padding: 0.4rem;
+    width: 250px;
+    margin: 0.2rem auto;
+    background-color: #f0f0f0;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+}
+.featured-image{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.thumbnail{
+    width: 200px;
+    max-width: 50%;
+    float: right;
+    margin: 0.5rem;
+    border-radius: 6px;
+}
+.copyright{
+    font-size: 80%;
+    text-align: center;
+}
