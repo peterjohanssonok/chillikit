@@ -1,6 +1,7 @@
 # Chilli PHP Kit 🌶️
 
 A lightweight PHP application kit for learning, prototyping, and building practical web applications.
+<img width="100%" alt="chillikit screenshot" src="https://github.com/user-attachments/assets/09ff2620-ecd5-4cda-aaf0-f8377203b482" />
 
 ## What can I build with Chilli?
 
