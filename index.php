@@ -239,7 +239,7 @@ register_shutdown_function('shutdownUpdate');
     Include scripts
 ------------------------------------------------------------------------ */
 // Example - Default response and how use the router q_function
-include(homedir.'chilli-example.php');
+//include(homedir.'chilli-example.php');
 
 // Environment Example - multiple functions, steps, admin access.
 //include(homedir.'chilli-html.php');
@@ -247,6 +247,8 @@ include(homedir.'chilli-example.php');
 //include(homedir.'chilli-env.php');
 
 // CMS - depends on chilli-html.php and chilli-pass.php
+//include(homedir.'chilli-html.php');
+//include(homedir.'chilli-pass.php');
 //include(homedir.'chilli-edit.php');
 //include(homedir.'chilli-pages.php');
 
